@@ -4,7 +4,7 @@ package edu.pitt.is.admit;
  * This class represents an applicant to the MSIS program at the 
  * School of Information Sciences.
  * @author Dmitriy Babichenko
- *
+ * Last edited: 01/07/2016
  */
 public class Applicant {
 	private String id;
