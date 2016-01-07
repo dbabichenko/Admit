@@ -27,7 +27,11 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.Font;
 
-
+/**
+ * Main class
+ * @author Dmitriy Babichenko
+ *
+ */
 public class Admit {
 	private JFrame admitFrame;
 	private JComboBox cboModelList;
