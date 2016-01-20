@@ -30,7 +30,7 @@ import java.awt.Font;
 /**
  * Main class
  * @author Dmitriy Babichenko
- *
+ * Added new comments
  */
 public class Admit {
 	private JFrame admitFrame;
@@ -71,6 +71,7 @@ public class Admit {
 	private JTextField txtGpa2;
 	private JTextField txtGpa1;
 	private JTextField txtGpa3;
+	private JTextField txtToeflScore;
 	
 	/**
 	 * Launch the application.
@@ -105,7 +106,7 @@ public class Admit {
 		String[] genders = {"M", "F"};
 		Arrays.sort(majors);
 		admitFrame = new JFrame();
-		admitFrame.setBounds(100, 100, 600, 600);
+		admitFrame.setBounds(100, 100, 600, 650);
 		admitFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		admitFrame.getContentPane().setLayout(null);
 		
@@ -132,7 +133,7 @@ public class Admit {
 		singleApplicantPanel = new JPanel();
 		singleApplicantPanel.setLayout(null);
 		singleApplicantPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		singleApplicantPanel.setBounds(20, 180, 560, 380);
+		singleApplicantPanel.setBounds(20, 180, 560, 428);
 		admitFrame.getContentPane().add(singleApplicantPanel);
 		
 		JLabel lblApplicantInformation = new JLabel("Applicant Information");
@@ -209,69 +210,69 @@ public class Admit {
 		singleApplicantPanel.add(txtGpa2);
 		
 		JLabel lblCollege1 = new JLabel("College Ranking 1:");
-		lblCollege1.setBounds(20, 202, 150, 20);
+		lblCollege1.setBounds(20, 238, 150, 20);
 		singleApplicantPanel.add(lblCollege1);
 		
 		cboCollege1 = new JComboBox();
-		cboCollege1.setBounds(157, 199, 122, 27);
+		cboCollege1.setBounds(157, 235, 122, 27);
 		singleApplicantPanel.add(cboCollege1);
 		
 		JLabel lblMajor1 = new JLabel("Major 1:");
-		lblMajor1.setBounds(20, 237, 150, 20);
+		lblMajor1.setBounds(20, 273, 150, 20);
 		singleApplicantPanel.add(lblMajor1);
 		
 		cboMajor1 = new JComboBox(majors);
-		cboMajor1.setBounds(157, 234, 122, 27);
+		cboMajor1.setBounds(157, 270, 122, 27);
 		singleApplicantPanel.add(cboMajor1);
 		
 		JLabel lblDegree1 = new JLabel("Degree 1:");
-		lblDegree1.setBounds(20, 270, 150, 20);
+		lblDegree1.setBounds(20, 306, 150, 20);
 		singleApplicantPanel.add(lblDegree1);
 		
 		cboDegree1 = new JComboBox(degrees);
-		cboDegree1.setBounds(157, 267, 122, 27);
+		cboDegree1.setBounds(157, 303, 122, 27);
 		singleApplicantPanel.add(cboDegree1);
 		
 		JLabel lblGpa1 = new JLabel("GPA 1:");
-		lblGpa1.setBounds(20, 310, 150, 20);
+		lblGpa1.setBounds(20, 346, 150, 20);
 		singleApplicantPanel.add(lblGpa1);
 		
 		txtGpa1 = new JTextField();
 		txtGpa1.setColumns(10);
-		txtGpa1.setBounds(157, 306, 67, 28);
+		txtGpa1.setBounds(157, 342, 67, 28);
 		singleApplicantPanel.add(txtGpa1);
 		
 		JLabel lblCollege3 = new JLabel("College Ranking 3:");
-		lblCollege3.setBounds(289, 205, 150, 20);
+		lblCollege3.setBounds(289, 241, 150, 20);
 		singleApplicantPanel.add(lblCollege3);
 		
 		cboCollege3 = new JComboBox();
-		cboCollege3.setBounds(419, 202, 122, 27);
+		cboCollege3.setBounds(419, 238, 122, 27);
 		singleApplicantPanel.add(cboCollege3);
 		
 		JLabel lblMajor3 = new JLabel("Major 3:");
-		lblMajor3.setBounds(289, 240, 150, 20);
+		lblMajor3.setBounds(289, 276, 150, 20);
 		singleApplicantPanel.add(lblMajor3);
 		
 		cboMajor3 = new JComboBox(majors);
-		cboMajor3.setBounds(419, 237, 122, 27);
+		cboMajor3.setBounds(419, 273, 122, 27);
 		singleApplicantPanel.add(cboMajor3);
 		
 		JLabel lblDegree3 = new JLabel("Degree 3:");
-		lblDegree3.setBounds(289, 273, 150, 20);
+		lblDegree3.setBounds(289, 309, 150, 20);
 		singleApplicantPanel.add(lblDegree3);
 		
 		cboDegree3 = new JComboBox(degrees);
-		cboDegree3.setBounds(419, 270, 67, 27);
+		cboDegree3.setBounds(419, 306, 67, 27);
 		singleApplicantPanel.add(cboDegree3);
 		
 		JLabel lblGpa3 = new JLabel("GPA 3:");
-		lblGpa3.setBounds(289, 313, 150, 20);
+		lblGpa3.setBounds(289, 349, 150, 20);
 		singleApplicantPanel.add(lblGpa3);
 		
 		txtGpa3 = new JTextField();
 		txtGpa3.setColumns(10);
-		txtGpa3.setBounds(419, 309, 67, 28);
+		txtGpa3.setBounds(419, 345, 67, 28);
 		singleApplicantPanel.add(txtGpa3);
 		
 		btnCheckAdmit = new JButton("To admit or not to admit?  That is the question...");
@@ -280,8 +281,17 @@ public class Admit {
 				processApplicant();
 			}
 		});
-		btnCheckAdmit.setBounds(196, 345, 345, 29);
+		btnCheckAdmit.setBounds(196, 385, 345, 29);
 		singleApplicantPanel.add(btnCheckAdmit);
+		
+		JLabel lblToeflTotalScore = new JLabel("TOEFL total score:");
+		lblToeflTotalScore.setBounds(20, 186, 150, 20);
+		singleApplicantPanel.add(lblToeflTotalScore);
+		
+		txtToeflScore = new JTextField();
+		txtToeflScore.setColumns(10);
+		txtToeflScore.setBounds(163, 182, 67, 28);
+		singleApplicantPanel.add(txtToeflScore);
 		
 		
 		JLabel lblModel = new JLabel("Select model:");

@@ -27,6 +27,7 @@ public class Applicant {
 	private String gender;
 	private String verbalScore;
 	private String quantatativeScore;
+	private String toeflScore;
 	
 	private RangeManager rangeManager;
 
@@ -254,6 +255,19 @@ public class Applicant {
 		}
 		else{
 			this.quantatativeScore = rangeManager.getStateFromValue("quantatativeGRE", Double.parseDouble(quantatativeScore));
+		}
+	}
+	
+	public String getToeflScore() {
+		return toeflScore;
+	}
+
+	public void setToeflScore(String toeflScore) {
+		if(toeflScore.equalsIgnoreCase("")){
+			this.toeflScore = "";
+		}
+		else{
+			this.toeflScore = rangeManager.getStateFromValue("toeflTotal", Double.parseDouble(toeflScore));
 		}
 	}
 

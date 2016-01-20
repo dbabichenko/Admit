@@ -37,19 +37,27 @@
 		<state id="s6_2_up" min="2" max="" />
 	</range>
 	<range id="verbalGRE">
-		<state id="s1_below_n2" min="2" max="" />
-		<state id="s2_n2_n1" min="2" max="" />
-		<state id="s3_n1_0" min="2" max="" />
-		<state id="s4_0_1" min="2" max="" />
-		<state id="s5_1_2" min="2" max="" />
+		<state id="s1_below_n2" min="" max="-2" />
+		<state id="s2_n2_n1" min="-2" max="-1" />
+		<state id="s3_n1_0" min="-1" max="0" />
+		<state id="s4_0_1" min="0" max="1" />
+		<state id="s5_1_2" min="1" max="2" />
 		<state id="s6_2_up" min="2" max="" />
 	</range>
 	<range id="quantatativeGRE">
-		<state id="s1_below_n2" min="2" max="" />
-		<state id="s2_n2_n1" min="2" max="" />
-		<state id="s3_n1_0" min="2" max="" />
-		<state id="s4_0_1" min="2" max="" />
-		<state id="s5_1_2" min="2" max="" />
+		<state id="s1_below_n2" min="" max="-2" />
+		<state id="s2_n2_n1" min="-2" max="-1" />
+		<state id="s3_n1_0" min="-1" max="0" />
+		<state id="s4_0_1" min="0" max="1" />
+		<state id="s5_1_2" min="1" max="2" />
+		<state id="s6_2_up" min="2" max="" />
+	</range>
+	<range id="toeflTotal">
+		<state id="s1_below_n2" min="" max="-2" />
+		<state id="s2_n2_n1" min="-2" max="-1" />
+		<state id="s3_n1_0" min="-1" max="0" />
+		<state id="s4_0_1" min="0" max="1" />
+		<state id="s5_1_2" min="1" max="2" />
 		<state id="s6_2_up" min="2" max="" />
 	</range>
 </ranges>

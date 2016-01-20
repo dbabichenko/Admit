@@ -52,4 +52,13 @@
 		<state id="s5_1_2" min="2" max="" />
 		<state id="s6_2_up" min="2" max="" />
 	</range>
+	<range id="toeflTotal">
+		<state id="s1_below_n2" min="2" max="" />
+		<state id="s2_n2_n1" min="2" max="" />
+		<state id="s3_n1_0" min="2" max="" />
+		<state id="s4_0_1" min="2" max="" />
+		<state id="s5_1_2" min="2" max="" />
+		<state id="s6_2_up" min="2" max="" />
+	</range>
+	
 </ranges>
